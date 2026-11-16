@@ -18,8 +18,7 @@ function draw() {
         if (racerXs[i] < finishX) {
             racerXs[i] += random(1, 3);
         }
-        circle(racerXs[i], y, 24);
-
+        circle(racerXs[i], y, 28);
     }
 
     let max = 0;
@@ -35,7 +34,6 @@ function draw() {
     }
 }
 
-
 function keyPressed() {
     if (key === "r") {
         location.reload();
@@ -44,7 +42,6 @@ function keyPressed() {
     if (keyIsDown(UP_ARROW)) {
         racerXs.push(40);
         makeCanvasLonger();
-
     }
 
     if (keyIsDown(DOWN_ARROW)) {
@@ -63,5 +60,5 @@ function keyPressed() {
     if (key === "3") {
         racerXs[2] += 20;
     }
-
 }
+
